@@ -11,6 +11,7 @@
         android:layout_height="48dp"
         android:hint="Enter amount"
         android:inputType="numberDecimal"
+        android:digits="0123456789."
         android:padding="8dp"
         android:textSize="16sp" />
 
@@ -18,13 +19,15 @@
         android:id="@+id/spinnerFrom"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
 
     <Spinner
         android:id="@+id/spinnerTo"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/btnConvert"
@@ -32,7 +35,8 @@
         android:layout_height="48dp"
         android:text="Convert"
         android:textSize="16sp"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:backgroundTint="@color/purple_500"/>
 
     <TextView
         android:id="@+id/tvResult"
@@ -41,6 +45,8 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:paddingTop="16dp"
-        android:text="Result: 0"/>
+        android:text="Result: 0"
+        android:gravity="center"
+        android:textAlignment="center"/>
 
 </LinearLayout>
